@@ -1,0 +1,40 @@
+.recorder-wrapper {
+  width: 320px;
+  height: 80px;
+  top: 20px;
+  left: 20px;
+  border-radius: 100px;
+  background: #00000099;
+  padding:10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  width: 60px;
+  height: 60px;
+  background-color: transparent;
+  border: none;
+  border-radius:100px;
+  background: #FFFFFF;
+
+  img {
+    width: 25px;
+    height: 25px;
+    transition: transform 0.2s ease;
+  }
+
+    &:hover img {
+    transform: scale(1.25);
+  }
+}
+
+.end-recording {
+  border: 3px solid #5061D0
+}
+
+.uk-progress {
+  height: 24px;
+  margin: 0 18px
+}

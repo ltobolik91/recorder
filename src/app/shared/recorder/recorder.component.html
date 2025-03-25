@@ -1,0 +1,11 @@
+<div class="recorder-wrapper">
+  <button class="start-recording" *ngIf="!isRecording" (click)="startCountdown()">
+    <img src="assets/icons/start-recording.svg" alt="Start Recording" />
+  </button>
+
+  <button class="end-recording" *ngIf="isRecording" (click)="stopRecording()">
+    <img src="assets/icons/end-recording.svg" alt="End Recording" />
+  </button>
+
+  <progress class="uk-progress" [value]="countdown" max="10"></progress>
+</div>

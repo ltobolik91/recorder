@@ -1,0 +1,16 @@
+.video-list {
+  background: #FFFFFF0F;
+  padding: 20px;
+  gap:12px;
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+  max-height: calc(100vh - 120px);
+  max-width: 300px;
+  border-radius: 8px;
+}
+
+.video-item {
+  max-width: 260px;
+  max-height: 180px;
+}

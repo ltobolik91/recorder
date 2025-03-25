@@ -1,0 +1,12 @@
+<div class="camera-container">
+  <video id="camera-preview" autoplay playsinline class="camera-preview"></video>
+
+  <div class="controls">
+    <select [value]="quality$ | async" (change)="onQualityChange($event)" class="quality-wrapper">
+      <option value="low">Low</option>
+      <option value="medium">Medium</option>
+      <option value="high">High</option>
+    </select>
+    <app-recorder (recordingStarted)="startRecording()" (recordingStopped)="stopRecording()" class="recorder-wrapper"></app-recorder>
+  </div>
+</div>

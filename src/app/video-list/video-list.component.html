@@ -1,0 +1,10 @@
+<div class="video-list">
+  <div *ngFor="let video of videos$ | async">
+    <video [src]="createObjectURL(video.blob)" controls class="video-item"></video>
+    <div class="video-info">
+      <span>{{ video.timestamp | date:'short' }}</span>
+      <span>Quality: {{ video.quality }}</span>
+      <button (click)="deleteVideo(video.id)">Delete</button>
+    </div>
+  </div>
+</div>

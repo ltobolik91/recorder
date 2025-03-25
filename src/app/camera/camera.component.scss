@@ -1,0 +1,28 @@
+:host {
+  flex-grow: 1;
+}
+.camera-container {
+  display: flex;
+   position: relative;
+}
+
+.camera-preview {
+  border-radius: 8px;
+  flex-grow: 1;
+}
+.controls{
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  bottom: 28px;
+
+  .quality-wrapper{
+
+  }
+
+  .recorder-wrapper{
+    margin: 0 auto;
+  }
+}
